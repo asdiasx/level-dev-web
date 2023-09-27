@@ -1,12 +1,11 @@
 <div id="comments">
-
-<% @comments.each do |comment| %>
-<h3><%= comment.body %></h3>
-<p>
-post:
-<%= comment.post.title %></br>
-<%= link_to "Show...", comment %>
-</p>
-<hr />
-<% end %>
+    <% @comments.each do |comment| %>
+        <h3><%= comment.body %></h3>
+        <p>
+            post:
+            <%= comment.post.title %></br>
+            <%= link_to "Show...", comment %>
+        </p>
+        <hr />
+    <% end %>
 </div>
